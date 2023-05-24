@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import { Information } from "./Information";
+import '../pages/styleseason.css'
+
 
 function Flowers (){
     const [flowers, setFlowers] = useState(Information);

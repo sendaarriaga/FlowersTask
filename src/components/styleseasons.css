@@ -1,0 +1,81 @@
+h1 {
+    font-family: 'Arial Narrow';
+    background-color: palevioletred; 
+    color: white;
+    font-weight: bold; 
+    text-align: center;
+    padding: 10px 0;
+}
+.Search {
+    display: flex;
+    font-family: 'Arial Narrow';
+    color: black;
+    font-size: 100%;
+    align-items: center;
+    flex-direction: row;
+}
+
+.Search input {
+margin-block: 0.3em;
+margin: 5px;
+}
+
+.flower-item {
+    width: 25em;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+}
+
+.flower-item img {
+    width: 25em;
+}
+
+.flower-item h3 {
+    font-family: 'Arial Narrow'; 
+    color: black;
+    font-size: 100%;
+    text-decoration: underline wavy black;}
+
+.flower-item p {
+    font-family: 'Arial Narrow'; 
+    color: black;
+    font-size: 100%;
+
+}
+ol {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: lightpink;
+    border: 4px solid black;
+    margin-bottom: 3.5em;
+    justify-content: flex-start;
+}
+
+  .volver {
+    border-color: palevioletred;
+    color:white;
+    width: 300px;
+    height:40px;
+    font-weight: bold;
+    font-family:'Arial Narrow';
+    background-color:palevioletred;
+    margin-top:20px ;
+    font-size: 18px;
+    position: fixed;
+    bottom: 10px;
+    left: 5px;
+}
+
+
+.volver:hover {
+    border-color: palevioletred;
+    color:palevioletred;
+    background-color:white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
