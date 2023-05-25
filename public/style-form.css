@@ -1,0 +1,59 @@
+h1 {
+    font-family: 'Arial Narrow';
+    background-color: palevioletred; 
+    color: white;
+    font-weight: bold; 
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+h3 {
+    font-family: 'Arial Narrow';
+    background-color: #db709347;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.background{
+    margin-left: 12em;
+}
+
+img{
+	height: 400px;
+	object-fit: cover;
+	border: 3px solid #ff9daa;
+}
+
+.send {
+    border-color: palevioletred;
+    color:white;
+    width: 300px;
+    height:40px;
+    font-weight: bold;
+    font-family:'Arial Narrow';
+    background-color:palevioletred;
+    margin-top:20px ;
+    font-size: 18px;
+    cursor:pointer;
+
+}
+
+.send:hover {
+    border-color: palevioletred;
+    color:palevioletred;
+    background-color:white;
+    cursor:pointer;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}

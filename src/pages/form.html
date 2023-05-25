@@ -5,26 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="stylesheet" href="style-form.css">
 </head>
 <body>
     <h1> SUGERENCIA DE FLOR </h1>
 
-    <h2>Nombre de la flor</h2>
-    <input type="text" name="flower-name" placeholder="Nombre de la flor">
-    <h2>Descripción de la flor</h2>
-    <input type="text" name="flower-description" placeholder="Descripción de la flor">
-    <h2>Estación del año:</h2>
-    <select name="season">
-        <option value="">--Please choose an option--</option>
-        <option value="invierno">invierno</option>
-        <option value="primavera">primavera</option>
-        <option value="verano">verano</option>
-        <option value="otono">otoño</option>
-    </select>
-    <h2>Sube la imagen de la flor</h2>
-        <form name="upload-photo" type="POST" enctype="multipart/formdata" >
-            <input type="file" name="photo" />
-        </form>
-    <input type="submit" name="upload" value="Enviar" />
+    <div class="container">
+       <div>
+        <h3>Nombre de la flor:</h3>
+        <input type="text" name="flower-name" placeholder="Enter here...">
+        <h3>Descripción de la flor:</h3>
+        <textarea name="flower-description" rows="10" cols="50">Enter here...</textarea>        
+        <h3>Estación del año:</h3>
+        <select name="season">
+            <option value="">--Please choose an option--</option>
+            <option value="invierno">invierno</option>
+            <option value="primavera">primavera</option>
+            <option value="verano">verano</option>
+            <option value="otono">otoño</option>
+        </select>
+        <h3>Sube la imagen de la flor</h3>
+            <form name="upload-photo" type="POST" enctype="multipart/formdata" >
+                <input type="file" name="photo" />
+            </form>
+        </div> 
+        <div class="background">
+            <img src="form/form-lavanda.jpg">
+        </div>
+    </div>
+    <input type="submit" name="upload" value="Enviar" class="send" />
+    
+    <footer>
+		&copy; Senda Arriaga
+	</footer>
 </body>
 </html>
