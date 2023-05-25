@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { Information } from "./Information";
-import '../pages/styleseason.css'
+import './styleseasons.css'
 
 
 function Flowers (){
