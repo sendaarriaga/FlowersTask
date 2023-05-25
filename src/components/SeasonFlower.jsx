@@ -13,16 +13,14 @@ function Flowers2 ({estacion}){
         }
     }
     return (
-        <><div class="flower">
-            <ol type="I"  >
+        <ol type="I"  >
                 {array.map((flower) => 
                     ( <li className="flower-item"> 
                         <h3>{flower.name} </h3>
                         <p>{flower.description} </p>
                         <img src={flower.image}/>
                     </li>))}
-            </ol>
-        </div></>
+        </ol>
     )
     
 }

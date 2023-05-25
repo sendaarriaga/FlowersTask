@@ -6,6 +6,17 @@ h1 {
     text-align: center;
     padding: 10px 0;
 }
+
+ol {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: lightpink;
+    border: 4px solid black;
+    margin-bottom: 2em;
+    justify-content: flex-start;
+}
+
 .Search {
     display: flex;
     font-family: 'Arial Narrow';
@@ -35,7 +46,8 @@ margin: 5px;
     font-family: 'Arial Narrow'; 
     color: black;
     font-size: 100%;
-    text-decoration: underline wavy black;}
+    text-decoration: underline wavy black;
+}
 
 .flower-item p {
     font-family: 'Arial Narrow'; 
@@ -43,17 +55,12 @@ margin: 5px;
     font-size: 100%;
 
 }
-ol {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: lightpink;
-    border: 4px solid black;
-    margin-bottom: 3.5em;
-    justify-content: flex-start;
+
+button {
+    cursor:pointer;
 }
 
-  .volver {
+.return {
     border-color: palevioletred;
     color:white;
     width: 300px;
@@ -68,8 +75,7 @@ ol {
     left: 5px;
 }
 
-
-.volver:hover {
+.return:hover {
     border-color: palevioletred;
     color:palevioletred;
     background-color:white;

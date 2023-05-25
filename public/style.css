@@ -21,6 +21,7 @@
 
 
 }
+
 .seasons button {
     border-color: palevioletred;
     color: palevioletred;
@@ -32,6 +33,7 @@
     width: 15em;
     margin-top: 10px;
 }
+
 .seasons button:hover {
     color: white;
     background-color: palevioletred;
@@ -43,6 +45,10 @@
     width: 15em;
 }
 
+button {
+    cursor:pointer;
+}
+
 .text {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -51,11 +57,6 @@
     font-weight: lighter;
     font-size: 18px;
     }
-
-img {
-    width: 90%;
-}
-
 
 p {
     font-family: 'Arial Narrow'; 
@@ -71,7 +72,12 @@ p {
     text-align: center;
     justify-items: center;
 }
-.todas {
+
+img {
+    width: 90%;
+}
+
+.all {
     border-color: palevioletred;
     color:white;
     width: 300px;
@@ -83,8 +89,7 @@ p {
     font-size: 18px;
 }
 
-
-.todas:hover {
+.all:hover {
     border-color: palevioletred;
     color:palevioletred;
     background-color:white;
