@@ -95,6 +95,25 @@ img {
     background-color:white;
 }
 
+.sugg {
+    border-color: palevioletred;
+    color:white;
+    width: 300px;
+    height:40px;
+    font-weight: bold;
+    font-family:'Arial Narrow';
+    background-color:palevioletred;
+    font-size: 18px;
+    float: right;
+    margin-top: 10px;
+    }
+    
+.sugg:hover {
+    border-color: palevioletred;
+    color:palevioletred;
+    background-color:white;
+}
+
 footer {
     display: flex;
     justify-content: center;
