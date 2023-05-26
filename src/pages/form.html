@@ -7,15 +7,6 @@
     <title>Formulario</title>
     <link rel="stylesheet" href="style-form.css">
     <link rel="shortcut icon" href="icono-form.png">
-    <script>
-    function sendMail() {
-        var link = "senda.arriaga.iglesiase@estudiantat.upc.edu"
-        + "&subject=Formulario Enviado"
-        + "&body=" + escape(document.getElementById('description').value);
-         
-        window.location.href = "mailto:" +link;
-        }
-    </script>
 </head>
 <body>
     <h1> SUGERENCIA DE FLOR </h1>
@@ -46,7 +37,7 @@
         </div>
     </div>
 
-    <input type="submit" name="upload" value="Enviar" class="send" onclick="sendMail(); return false" />
+    <input type="submit" name="upload" value="Enviar" class="send" onClick="alert('Enviado!')" />
     <input type="reset" class="send" value="Borrar formulario" />
     
     <footer>
