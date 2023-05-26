@@ -1,6 +1,7 @@
 # MY WEB PAGE FOR TASK 1:
 https://flowers-senda.vercel.app/
 
+Los botones Buscar, Enviar y Borrar formulario no realizan ninguna acción (almenos en dicha Task1)
 
 ```
 npm create astro@latest -- --template basics
