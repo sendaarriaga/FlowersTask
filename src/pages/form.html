@@ -7,36 +7,48 @@
     <title>Formulario</title>
     <link rel="stylesheet" href="style-form.css">
     <link rel="shortcut icon" href="icono-form.png">
+    <script>
+    function sendMail() {
+        var link = "senda.arriaga.iglesiase@estudiantat.upc.edu"
+        + "&subject=Formulario Enviado"
+        + "&body=" + escape(document.getElementById('description').value);
+         
+        window.location.href = "mailto:" +link;
+        }
+    </script>
 </head>
 <body>
     <h1> SUGERENCIA DE FLOR </h1>
 
     <div class="container">
-       <div>
-        <h3>Nombre de la flor:</h3>
-        <input type="text" name="flower-name" placeholder="Enter here...">
-        <h3>Descripción de la flor:</h3>
-        <textarea name="flower-description" rows="10" cols="50">Enter here...</textarea>        
-        <h3>Estación del año:</h3>
-        <select name="season">
-            <option value="">--Please choose an option--</option>
-            <option value="invierno">invierno</option>
-            <option value="primavera">primavera</option>
-            <option value="verano">verano</option>
-            <option value="otono">otoño</option>
-        </select>
-        <h3>Sube la imagen de la flor</h3>
-            <form name="upload-photo" type="POST" enctype="multipart/formdata" >
-                <input type="file" name="photo" />
-            </form>
+
+        <div>
+            <h3>Nombre de la flor:</h3>
+            <input type="text" name="flower-name" id="name" placeholder="Enter here...">
+            <h3>Descripción de la flor:</h3>
+            <textarea name="flower-description" id="description" rows="10" cols="50">Enter here...</textarea>        
+            <h3>Estación del año:</h3>
+            <select name="season" id="season">
+                <option value="">--Please choose an option--</option>
+                <option value="invierno">invierno</option>
+                <option value="primavera">primavera</option>
+                <option value="verano">verano</option>
+                <option value="otono">otoño</option>
+            </select>
+            <h3>Sube la imagen de la flor</h3>
+                <form name="upload-photo" type="POST" enctype="multipart/formdata" >
+                    <input id="image" type="file" name="photo" />
+                </form>
         </div> 
+        
         <div class="background">
             <img src="form/form-lavanda.jpg">
         </div>
     </div>
-    <input type="submit" name="upload" value="Enviar" class="send" onClick="alert('Enviado!')" />
-    <input type="reset" class="send" value="Borrar formulario" />
 
+    <input type="submit" name="upload" value="Enviar" class="send" onclick="sendMail(); return false" />
+    <input type="reset" class="send" value="Borrar formulario" />
+    
     <footer>
 		&copy; Senda Arriaga
 	</footer>
