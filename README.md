@@ -1,8 +1,9 @@
 # MY WEB PAGE FOR TASK 1:
 https://flowers-senda.vercel.app/
-
 Los botones Buscar, Enviar y Borrar formulario no realizan ninguna acción (almenos en dicha Task1)
 
+# MY PUBLIC REPOSITORY HOSTED ON GitHub:
+https://github.com/sendaarriaga/FlowersTask.git
 ```
 npm create astro@latest -- --template basics
 ```
